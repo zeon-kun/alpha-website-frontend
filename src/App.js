@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from './Layout/Navbar/Navbar'
 import Footer from './Layout/Footer/Footer'
+import LandingPage from "./Components/LandingPage/LandingPage";
 
 const App = () => {
   return (
     <>
       <div class="bg-teal-500">
         <Navbar />
-        <div> App </div>
+        <LandingPage />
         <Footer />
       </div>
     </>
