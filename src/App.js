@@ -6,7 +6,7 @@ import LandingPage from "./Components/LandingPage/LandingPage";
 const App = () => {
   return (
     <>
-      <div class="bg-teal-500">
+      <div className="bg-teal-500">
         <Navbar />
         <LandingPage />
         <Footer />

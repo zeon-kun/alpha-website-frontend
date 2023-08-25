@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logoWhite from '../../assets/logo-white.png';
-import instagram from '../../assets/instagram.png';
-import twitter from '../../assets/twitter.png';
-import linkedin from '../../assets/linkedin.png';
-import youtube from '../../assets/youtube.png';
+import logoWhite from 'src/assets/logo-white.png';
+import instagram from 'src/assets/instagram.png';
+import twitter from 'src/assets/twitter.png';
+import linkedin from 'src/assets/linkedin.png';
+import youtube from 'src/assets/youtube.png';
 
 const Footer = () => {
   return (
     <>
-      <footer class="px-2 md:px-12 bg-white">
+      <footer class="flex px-2 md:px-12 bg-white">
         <div class="w-full rounded-t-3xl bg-teal-600 flex text-white lg:p-32 lg:flex-row p-2 flex-col text-center lg:text-left font-montserrat">
           <div class="flex-[1_0_30%] p-6 flex items-center flex-col lg:block">
             <img src={logoWhite} alt="alpha-logo-white" class="w-[200px]" />
