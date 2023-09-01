@@ -4,9 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'teal-500': '#1AABA9',
-        'blueGray-800': '#082449'
-      }
+        "teal-500": "#1AABA9",
+        "blueGray-800": "#082449",
+      },
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [],
