@@ -9,80 +9,92 @@ const Dashboard = () => {
         <Navbar />
         {/* Bagian 1 */}
         <div className="relative">
-          <div className="w-full absolute top-[50px] ">
-            <div className="grid grid-cols-2 w-[90%] mx-auto py-4 p-4  justify-between">
+          <div className="w-full absolute top-[6rem] ">
+            <div className="grid grid-cols-2 w-[90%] mx-auto py-4 p-4  justify-between text-[24px] lg:text-[30px] xl:text-[48px]">
               <div className="flex flex-row w-3/4  items-center">
-                <div className="w-[80px] h-[80px] rounded-full hidden lg:flex">
+                <div className="w-[1.666em] h-[1.666em] rounded-full hidden lg:flex">
                   <img
                     src="/Images/profile.png"
                     className="w-full object-cover rounded-full"
+                    alt="profile"
                   />
                 </div>
                 <div className="overflow-hidden">
-                  <h1 className="font-montserrat text-white font-[700] text-[48px]">
+                  <h1 className="font-montserrat text-white font-[700] text-[1em]">
                     Hai Jane Doe !
                   </h1>
-                  <p className="font-montserrat text-white font-[500] text-[24px]">
+                  <p className="font-montserrat text-white font-[500] text-[0.5em]">
                     Ayo Belajar Hal Baru
                   </p>
                 </div>
               </div>
-              <div className="bg-white h-[80px] rounded-3xl flex  p-6 justify-between items-center">
+              <div className="bg-white h-[1.666em] rounded-3xl flex  p-6 justify-between items-center">
                 <input
                   type="text"
                   placeholder="Cari Materi atau tryout yang ingin dicoba ..."
-                  className="outline-none w-3/4 font-montserrat font-[400] text-[24px]"
+                  className="outline-none w-3/4 font-montserrat font-[400] text-[0.5em]"
                 />
                 <img src="/Images/input-search.png" className="" />
               </div>
-              <div className="w-3/4 flex justify-center items-center font-montserrat text-white text-[18px] lg:text-[24px] font-[600] rounded-3xl bg-[#B7B7B7] my-4">
-                Belum Berlangganan
+              <div className="w-3/4 flex justify-center items-center font-montserrat  rounded-3xl bg-[#B7B7B7] my-4">
+                <p className="text-white text-[0.375em] lg:text-[0.5em] font-[600]">
+                  Belum Berlangganan
+                </p>
               </div>
-              <div className="bg-[#082449] py-2 rounded-3xl my-4 flex justify-center items-center">
-                <p className="text-[18px] lg:text-[24px] text-center text-white font-[600] inline-block mr-2">
+              <div className="bg-[#082449] py-2 rounded-3xl my-4 p-2 flex justify-center items-center">
+                <p className="text-[0.375em] lg:text-[0.5em] text-center text-white font-[600] inline-block mr-2">
                   Tingkatkan ke Alpha Academy+ Sekarang Juga !
                 </p>
                 <img src="/Images/verif.png" />
               </div>
             </div>
-            <div className="bg-white rounded-2xl w-full p-8">
+
+            <div className="bg-white rounded-2xl w-full p-8 text-[24px] lg:text-[30px] xl:text-[48px]">
               <div className="flex flex-row p-6 justify-center items-center">
                 <div className="flex justify-start w-3/4 ">
-                  <div className="w-1/5 hidden lg:flex justify-center items-center ">
-                    <img src="/Images/speech.png" className="pr-6" />
+                  <div className="w-1/5 flex justify-center items-center min-w-[0.5em] ">
+                    <img
+                      src="/Images/speech.png"
+                      className="w-full h-[1.35em] object-contain"
+                      alt="speech"
+                    />
                   </div>
                   <div>
-                    <p className="text-[#082449] text-[24px] font-montserrat font-[500]">
+                    <p className="text-[#082449] text-[0.5em] font-montserrat font-[500]">
                       TAHUKAH KAMU?
                     </p>
-                    <p className="text-[#082449] text-[24px] font-montserrat font-[500]">
+                    <p className="text-[#082449] text-[0.5em] font-montserrat font-[500]">
                       Alpha Academy memiliki Podcast yang bisa kamu dengar
                       sambil mengerjakan kepentingan lain
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="flex w-full p-6 justify-center items-center">
+              <div className="flex w-full p-6 justify-center items-center text-[24px] lg:text-[30px] xl:text-[48px]">
                 <div className="flex w-[75%] justify-between items-center">
-                  <h2 className="text-[48px] font-[700] text-[#082449]">
+                  <h2 className="text-[1em] font-[700] text-[#082449]">
                     Materi dan Soal Berjalan
                   </h2>
-                  <div className="w-[240px] h-[30px] shrink-0 px-[54px] text-white text-[20px] font-[600] rounded-lg flex justify-center items-center bg-[#B7B7B7]">
+                  <div className="w-[15em] h-[1.875em] shrink-0 px-[1.125em] text-white text-[0.4166em] font-[600] rounded-lg flex justify-center items-center bg-[#B7B7B7]">
                     Materi Gratis
                   </div>
                 </div>
               </div>
-              <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 text-[35px] xl:text-[45px]">
                 <div className="p-4">
-                  <div className="bg-[#ECF5F5] mx-auto w-[427px] h-[427px] rounded-3xl ">
+                  <div className="bg-[#ECF5F5] mx-auto w-[8.89em] h-[8.89em] rounded-3xl ">
                     <div className="flex flex-col justify-center items-center p-8">
-                      <div className="w-[170px] h-[170px] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[10px] border-[#082449]">
-                        <img src="/Images/geo.png" className="object-contain" />
+                      <div className="w-[3.541em] h-[3.541em] overflow-hidden flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[0.20833em] border-[#082449]">
+                        <img
+                          src="/Images/geo.png"
+                          className="object-contain h-[2em] w-full"
+                        />
                       </div>
-                      <h2 className="text-[24px] py-4 font-[700] text-[#082449]">
+                      <h2 className="text-[0.5em] py-4 font-[700] text-[#082449]">
                         Perkenalan Geografi
                       </h2>
-                      <div className="w-[353px] h-[100px] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
+                      <div className="w-[7.3541em] h-[2.0833em] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -107,10 +119,10 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.66em] font-[700] text-black">
                           30
                         </span>
-                        <div className="w-[9px] h-[58px] bg-[#ddd]"></div>
+                        <div className="w-[0.1875em] h-[1.21em] bg-[#ddd]"></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -123,7 +135,7 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.666em] font-[700] text-black">
                           25
                         </span>
                       </div>
@@ -131,15 +143,18 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className=" p-4 ">
-                  <div className="bg-[#ECF5F5] mx-auto w-[427px] h-[427px] rounded-3xl ">
+                  <div className="bg-[#ECF5F5] mx-auto w-[8.895em] h-[8.895em] rounded-3xl ">
                     <div className="flex flex-col justify-center items-center p-8">
-                      <div className="w-[170px] h-[170px] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[10px] border-[#082449]">
-                        <img src="/Images/geo.png" className="object-contain" />
+                      <div className="w-[3.541em] h-[3.541em] overflow-hidden flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[0.2083em] border-[#082449]">
+                        <img
+                          src="/Images/geo.png"
+                          className="object-contain h-[2em] w-full"
+                        />
                       </div>
-                      <h2 className="text-[24px] py-4 font-[700] text-[#082449]">
+                      <h2 className="text-[0.5em] py-4 font-[700] text-[#082449]">
                         Latihan Geografi 1
                       </h2>
-                      <div className="w-[353px] h-[100px] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
+                      <div className="w-[7.3541em] h-[2.0833em] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -164,10 +179,10 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.666em] font-[700] text-black">
                           5
                         </span>
-                        <div className="w-[9px] h-[58px] bg-[#ddd]"></div>
+                        <div className="w-[0.1875em] h-[1.20833em] bg-[#ddd]"></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -180,7 +195,7 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.666em] font-[700] text-black">
                           30
                         </span>
                       </div>
@@ -188,15 +203,18 @@ const Dashboard = () => {
                   </div>
                 </div>
                 <div className=" p-4  ">
-                  <div className="bg-[#ECF5F5] mx-auto w-[427px] h-[427px] rounded-3xl ">
+                  <div className="bg-[#ECF5F5] mx-auto w-[8.895em] h-[8.895em] rounded-3xl ">
                     <div className="flex flex-col justify-center items-center p-8">
-                      <div className="w-[170px] h-[170px] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[10px] border-[#082449]">
-                        <img src="/Images/geo.png" className="object-contain" />
+                      <div className="w-[3.541em] h-[3.541em] overflow-hidden flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[0.20833em] border-[#082449]">
+                        <img
+                          src="/Images/geo.png"
+                          className="object-contain h-[2em] w-full"
+                        />
                       </div>
-                      <h2 className="text-[24px] py-4 font-[700] text-[#082449]">
+                      <h2 className="text-[0.5em] py-4 font-[700] text-[#082449]">
                         Geografi 1
                       </h2>
-                      <div className="w-[353px] h-[100px] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
+                      <div className="w-[7.3541em] h-[2.0833em] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -221,10 +239,10 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.666em] font-[700] text-black">
                           27
                         </span>
-                        <div className="w-[9px] h-[58px] bg-[#ddd]"></div>
+                        <div className="w-[0.1875em] h-[1.20833em] bg-[#ddd]"></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -237,7 +255,7 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.66em] font-[700] text-black">
                           30
                         </span>
                       </div>
@@ -248,26 +266,30 @@ const Dashboard = () => {
               {/* progres bulan ini */}
               <div className="w-full flex flex-col lg:flex-row  justify-between px-16 py-12">
                 <div className="flex flex-col basis-1 lg:basis-2/3 lg:mx-10">
-                  <h2 className="text-[#082449] text-[48px]  font-montserrat font-[700]">
+                  <h2 className="text-[#082449] text-[1em]  font-montserrat font-[700]">
                     Progres Bulan ini
                   </h2>
-                  <div className="w-full h-[500px] p-8 bg-[#E9ECEC] rounded-3xl min-w-[700px] ">
+                  <div className="w-full h-[10.416em] p-8 bg-[#E9ECEC] rounded-3xl min-w-[14.5833em] ">
                     <div className="flex flex-row">
-                      <div className="basis-1/4 text-[#082449] text-[20px] font-montserrat font-[600]">
-                        Jam
+                      <div className="basis-1/4">
+                        <p className="text-[#082449] text-[0.4166em] font-montserrat font-[600]">
+                          Jam
+                        </p>
                       </div>
-                      <div className="basis-3/4 text-[#082449] text-[20px] font-montserrat font-[600]">
-                        Konsisten dalam belajar adalah kunci
+                      <div className="basis-3/4">
+                        <p className="text-[#082449] text-[0.4166em] font-montserrat font-[600]">
+                          Konsistensi dalam belajar adalah kunci
+                        </p>
                       </div>
                     </div>
-                    <div className="flex justify-center items-center my-8 text-[#082449] text-[70px] font-montserrat font-[800]">
+                    <div className="flex justify-center items-center my-8 text-[#082449] text-[1.45833em] font-montserrat font-[800]">
                       Grafik
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-col basis-1/3">
                   <div className="flex flex-row justify-start items-center">
-                    <h2 className="text-[#082449] text-[48px] font-montserrat font-[700] pr-8">
+                    <h2 className="text-[#082449] text-[1em] font-montserrat font-[700] pr-8">
                       Study Track
                     </h2>
                     <svg
@@ -290,18 +312,23 @@ const Dashboard = () => {
                       />
                     </svg>
                   </div>
-                  <div className="w-full max-h-[500px] min-w-[300px] bg-[#E9ECEC] rounded-3xl">
+                  <div className="w-full max-h-[10.4166em] min-w-[6.25em] bg-[#E9ECEC] rounded-3xl pb-4">
                     <div className="flex flex-col p-8 justify-center items-center">
                       <div className="flex flex-row justify-between items-center">
-                        <span className="text-[20px] font-montserrat mr-4 font-[600] text-[#082449]">
+                        <span className="text-[0.4166em] font-montserrat mr-4 font-[600] text-[#082449]">
                           Tetap Konsisten!
                         </span>
-                        <div className="w-[116px] h-[32px] bg-[#082449] rounded-[15px] text-white font-montserrat text-[16px] font-[600] flex justify-center items-center">
-                          Rincian
+                        <div className="w-[2.4166em] h-[0.66em] bg-[#082449] rounded-[0.3125em]  flex justify-center items-center">
+                          <p className="text-white font-montserrat text-[0.333em] font-[600]">
+                            Rincian
+                          </p>
                         </div>
                       </div>
-                      <div className="my-4">
-                        <img src="/Images/calendar.png" />
+                      <div className="my-4 max-h-[8em] max-w-[6em]">
+                        <img
+                          src="/Images/calendar.png"
+                          className="object-contain w-full"
+                        />
                       </div>
                     </div>
                   </div>
@@ -309,72 +336,87 @@ const Dashboard = () => {
               </div>
               <div className="w-full flex-col  px-16 py-12">
                 <div className="flex flex-row justify-between w-full items-center">
-                  <h2 className="text-[#082449] text-[48px] font-montserrat font-[700]">
+                  <h2 className="text-[#082449] text-[1em] font-montserrat font-[700]">
                     Video Pembelajaran Berjalan
                   </h2>
-                  <div className="w-[240px] h-[30px] shrink-0 px-[54px] text-white text-[20px] font-[600] rounded-lg flex justify-center items-center bg-[#B7B7B7]">
-                    Materi Gratis
+                  <div className="w-[5em] h-[0.625em] shrink-0 px-[1.125em] rounded-lg flex justify-center items-center bg-[#B7B7B7]">
+                    <p className="text-white text-[0.4166em] font-[600]">
+                      Materi Gratis
+                    </p>
                   </div>
                 </div>
-                <div className="flex flex-col  justify-center items-center px-24 py-20 max-w-[1553px] max-h-[980px] mx-auto rounded-3xl bg-[#E9ECEC]">
+                <div className="flex flex-col  justify-center items-center px-24 py-20 max-w-[32.3441em] max-h-[20.4em] mx-auto rounded-3xl bg-[#E9ECEC]">
                   <img src="/Images/rect.png" className="w-full" />
                   <div className="flex flex-col justify-start items-start w-full  shrink">
-                    <h2 className="text-[#082449] text-[20px] lg:text-[48px] font-[700] font-montserrat">
+                    <h2 className="text-[#082449] text-[0.4166em] lg:text-[1em] font-[700] font-montserrat">
                       Judul
                     </h2>
-                    <h2 className="text-[#082449] text-[20px] lg:text-[48px] font-[700] font-montserrat">
+                    <h2 className="text-[#082449] text-[0.4166em] lg:text-[1em] font-[700] font-montserrat">
                       Deskripsi
                     </h2>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-full bg-[#0D3A74] py-16 flex flex-col justify-center items-center">
+            <div className="w-full bg-[#0D3A74] py-16 flex flex-col justify-center items-center text-[24px] lg:text-[30px] xl:text-[48px]">
               <div className="flex flex-col w-[70%] justify-center items-center">
-                <h1 className="text-white text-[48px] text-center font-[700] font-montserrat">
+                <h1 className="text-white text-[1em] text-center font-[700] font-montserrat">
                   Fitur-Fitur Alpha Academy
                 </h1>
-                <p className="text-white text-[24px] text-center font-[500] font-montserrat">
+                <p className="text-white text-[0.5em] text-center font-[500] font-montserrat">
                   Alpha Academy akan membantumu dalam persiapan dan pendampingan
                   olimpiade sains dengan materi yang berkualitas dan
                   komprehensif
                 </p>
               </div>
-              <div className="w-full  bg-white rounded-[60px] py-8 px-20">
+              <div className="w-full  bg-white rounded-[1.25em] py-8 px-20 ">
                 <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2">
                   <div className="flex flex-col ">
                     <div className="flex flex-row py-8">
                       <div className="flex flex-col  basis-1/2 justify-start items-center group ">
-                        <div className="flex justify-center  items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <img src="/Images/tryout.png" />
+                        <div className="flex justify-center overflow-hidden  items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <img
+                            src="/Images/tryout.png"
+                            className=" h-[1.58em] object-contain"
+                            alt="tryout"
+                          />
                         </div>
-                        <h3 className="text-[#082449] text-[24px] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-[0.5em] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           Try Out
                         </h3>
                       </div>
                       <div className="flex flex-col basis-1/2 justify-start items-center group">
-                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <img src="/Images/pelatihan.png" />
+                        <div className="flex overflow-hidden justify-center items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <img
+                            src="/Images/pelatihan.png"
+                            className=" h-[1.58em] object-contain"
+                          />
                         </div>
-                        <h3 className="text-[#082449] text-[24px] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-[0.5em] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           Pelatihan
                         </h3>
                       </div>
                     </div>
                     <div className="flex flex-row">
                       <div className="flex flex-col basis-1/2 justify-start items-center group">
-                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <img src="/Images/materi.png" />
+                        <div className="flex justify-center overflow-hidden items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <img
+                            src="/Images/materi.png"
+                            className=" h-[1.58em] object-contain"
+                          />
                         </div>
-                        <h3 className="text-[#082449] text-[24px] text-center font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-[0.5em] text-center font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           Materi komprehensif
                         </h3>
                       </div>
                       <div className="flex flex-col basis-1/2 justify-start items-center group">
-                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <img src="/Images/blog.png" />
+                        <div className="flex justify-center overflow-hidden items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <img
+                            src="/Images/blog.png"
+                            className=" h-[1.58em] object-contain"
+                          />
                         </div>
-                        <h3 className="text-[#082449] text-[24px] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-[0.5em] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           Blog
                         </h3>
                       </div>
@@ -388,40 +430,49 @@ const Dashboard = () => {
                   <div className="flex flex-col ">
                     <div className="flex flex-row py-8">
                       <div className="flex flex-col  basis-1/2 justify-start items-center group">
-                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <img src="/Images/podcast.png" />
+                        <div className="flex justify-center overflow-hidden items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <img
+                            src="/Images/podcast.png"
+                            className=" h-[1.58em] object-contain"
+                          />
                         </div>
-                        <h3 className="text-[#082449] text-center text-[24px] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-center text-[0.5em] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           Webinar & Podcast
                         </h3>
                       </div>
                       <div className="flex flex-col basis-1/2 justify-start items-center group">
-                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <img src="/Images/course.png" />
+                        <div className="flex justify-center overflow-hidden items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <img
+                            src="/Images/course.png"
+                            className=" h-[1.58em] object-contain"
+                          />
                         </div>
-                        <h3 className="text-[#082449] text-[24px] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-[0.5em] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           Short Course
                         </h3>
                       </div>
                     </div>
                     <div className="flex flex-row">
                       <div className="flex flex-col basis-1/2 justify-start items-center group">
-                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <img src="/Images/tutor.png" />
+                        <div className="flex justify-center overflow-hidden items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <img
+                            src="/Images/tutor.png"
+                            className=" h-[1.58em] object-contain"
+                          />
                         </div>
-                        <h3 className="text-[#082449] text-[24px] text-center  font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-[0.5em] text-center  font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           Find Your Tutor
                         </h3>
                       </div>
                       <div className="flex flex-col basis-1/2 justify-start items-center group">
-                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[136px] h-[136px] rounded-[2rem] box-border border-[10px] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
-                          <div className="grid grid-cols-3 gap-5">
-                            <span className="w-[1rem] h-[1rem] bg-[#082449] rounded-full"></span>
-                            <span className="w-[1rem] h-[1rem] bg-[#082449] rounded-full"></span>
-                            <span className="w-[1rem] h-[1rem] bg-[#082449] rounded-full"></span>
+                        <div className="flex justify-center items-center bg-[#E7D4BF] w-[2.833em] h-[2.833em] rounded-[2rem] box-border border-[0.208em] border-[#0D3A74] group-hover:scale-110 transition-all duration-500">
+                          <div className="grid grid-cols-3 gap-3 lg:gap-5">
+                            <span className="w-[0.33em] h-[0.33em] bg-[#082449] rounded-full"></span>
+                            <span className="w-[0.33em] h-[0.33em] bg-[#082449] rounded-full"></span>
+                            <span className="w-[0.33em] h-[0.33em] bg-[#082449] rounded-full"></span>
                           </div>
                         </div>
-                        <h3 className="text-[#082449] text-[24px] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
+                        <h3 className="text-[#082449] text-[0.5em] font-montserrat font-[500] group-hover:translate-y-4 group-hover:scale-110 transition-all duration-500">
                           More
                         </h3>
                       </div>
@@ -430,87 +481,89 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full bg-white ">
+
+            <div className="w-full bg-white sm:text-[16px] md:text-[24px] lg:text-[30px] xl:text-[48px]">
               <div className="grid grid-cols-1 gap-20 justify-items-center py-16">
-                <h1 className="font-montserrat font-[700] text-center text-[48px] text-[#082449]">
+                <h1 className="font-montserrat font-[700] text-center text-[1em] text-[#082449]">
                   Artikel-Artikel Pilihan Untukmu Hari Ini
                 </h1>
+
                 <div className="flex flex-row w-4/5 bg-[#ECF5F5] px-16 py-12 rounded-3xl">
                   <div className="flex flex-col basis-2/3">
-                    <h2 className="font-montserrat font-[600] text-[#082449] text-[44px]">
+                    <h2 className="font-montserrat font-[600] text-[#082449] text-[0.91em]">
                       Perubahan Aturan Olimpiade di Tahun 2023? Berikut Hal-Hal
                       yang Berubah
                     </h2>
-                    <p className="font-montserrat font-[400] text-[#082449] text-[32px]">
+                    <p className="font-montserrat font-[400] text-[#082449] text-[0.66em]">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Sem nulla pharetra diam sit amet. Nisi quis
                       eleifend quam adipiscing vitae.
                     </p>
-                    <Link className="flex justify-center items-center w-[240px] h-[30px] bg-[#082449] text-white font-montserrat rounded-lg hover:scale-110 transition-all duration-500">
+                    <Link className="flex justify-center items-center w-[11em] h-[2em] bg-[#082449] text-white text-[0.416em] font-montserrat rounded-lg hover:scale-110 transition-all duration-500">
                       Lihat Lebih Lanjut
                     </Link>
                   </div>
                   <div className="basis-1/3">
-                    <img src="/Images/artikel-1.png" />
-                  </div>
-                </div>
-
-                <div className="flex flex-row w-4/5 bg-[#ECF5F5] px-16 py-12 rounded-3xl">
-                  <div className="basis-1/3">
-                    <img src="/Images/artikel-2.png" />
-                  </div>
-                  <div className="flex flex-col basis-2/3">
-                    <h2 className="font-montserrat font-[600] text-[#082449] text-[44px]">
-                      Berikut adalah wilayah penyumbang olimpiade terbanyak di
-                      Indonesia
-                    </h2>
-                    <p className="font-montserrat font-[400] text-[#082449] text-[32px]">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Sem nulla pharetra diam sit amet. Nisi quis
-                      eleifend quam adipiscing vitae.
-                    </p>
-                    <Link className="flex justify-center items-center w-[240px] h-[30px] bg-[#082449] text-white font-montserrat rounded-lg hover:scale-110 transition-all duration-500">
-                      Lihat Lebih Lanjut
-                    </Link>
+                    <img src="/Images/artikel-1.png" alt="artikel-1" />
                   </div>
                 </div>
 
                 <div className="flex flex-row w-4/5 bg-[#ECF5F5] px-16 py-12 rounded-3xl">
                   <div className="flex flex-col basis-2/3">
-                    <h2 className="font-montserrat font-[600] text-[#082449] text-[44px]">
-                      Mata pelajaran apa yang sulit dihadapi ditingkat
-                      olimpiade? Matematika salah satunya lho
+                    <h2 className="font-montserrat font-[600] text-[#082449] text-[0.91em]">
+                      Perubahan Aturan Olimpiade di Tahun 2023? Berikut Hal-Hal
+                      yang Berubah
                     </h2>
-                    <p className="font-montserrat font-[400] text-[#082449] text-[32px]">
+                    <p className="font-montserrat font-[400] text-[#082449] text-[0.66em]">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
                       aliqua. Sem nulla pharetra diam sit amet. Nisi quis
                       eleifend quam adipiscing vitae.
                     </p>
-                    <Link className="flex justify-center items-center w-[240px] h-[30px] bg-[#082449] text-white font-montserrat rounded-lg hover:scale-110 transition-all duration-500">
+                    <Link className="flex justify-center items-center w-[11em] h-[2em] bg-[#082449] text-white text-[0.416em] font-montserrat rounded-lg hover:scale-110 transition-all duration-500">
                       Lihat Lebih Lanjut
                     </Link>
                   </div>
                   <div className="basis-1/3">
-                    <img src="/Images/artikel-3.png" />
+                    <img src="/Images/artikel-1.png" alt="artikel-1" />
+                  </div>
+                </div>
+
+                <div className="flex flex-row w-4/5 bg-[#ECF5F5] px-16 py-12 rounded-3xl">
+                  <div className="flex flex-col basis-2/3">
+                    <h2 className="font-montserrat font-[600] text-[#082449] text-[0.91em]">
+                      Perubahan Aturan Olimpiade di Tahun 2023? Berikut Hal-Hal
+                      yang Berubah
+                    </h2>
+                    <p className="font-montserrat font-[400] text-[#082449] text-[0.66em]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Sem nulla pharetra diam sit amet. Nisi quis
+                      eleifend quam adipiscing vitae.
+                    </p>
+                    <Link className="flex justify-center items-center w-[11em] h-[2em] bg-[#082449] text-white text-[0.416em] font-montserrat rounded-lg hover:scale-110 transition-all duration-500">
+                      Lihat Lebih Lanjut
+                    </Link>
+                  </div>
+                  <div className="basis-1/3">
+                    <img src="/Images/artikel-1.png" alt="artikel-1" />
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="w-full bg-[#FF9620] ">
+            <div className="w-full bg-[#FF9620] text-[24px] lg:text-[30px] xl:text-[48px]">
               <div className="flex flex-col justify-center items-center py-20">
                 <div className="grid grid-cols-1 w-3/4 justify-items-center items-center gap-4">
-                  <h2 className="font-montserrat font-[700] text-center text-white text-[48px]">
+                  <h2 className="font-montserrat font-[700] text-center text-white text-[1em]">
                     Rekomendasi Belajar
                   </h2>
-                  <p className="font-montserrat font-[500] text-center text-white text-[32px]">
+                  <p className="font-montserrat font-[500] text-center text-white text-[0.65em]">
                     Alpha Academy memberikanmu rekomendasi belajar yang relevan
                     sesuai dengan materi-materi yang telah anda pilih dan jalani
                   </p>
-                  <div className="flex w-[50%] rounded-[18px] justify-center text-center items-center bg-[#082449] text-white font-montserrat font-[600] text-[24px] px-2 py-4">
+                  <div className="flex w-[50%] rounded-[0.375em] justify-center text-center items-center bg-[#082449] text-white font-montserrat font-[600] text-[0.5em] px-2 py-4">
                     Khusus Pelanggan Alpha Academy +
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -527,16 +580,20 @@ const Dashboard = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center items-center py-12">
-                  <div className="bg-[#FFFFFF] mx-auto w-[370px] h-[370px] rounded-3xl mx-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 lg:gap-4 justify-items-center items-center py-12">
+                  <div className="bg-[#FFFFFF] w-[7.7em] h-[7.7em] rounded-3xl mx-auto">
                     <div className="flex flex-col justify-center items-center p-8">
-                      <div className="w-[170px] h-[170px] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[10px] border-[#082449]">
-                        <img src="/Images/geo.png" className="object-contain" />
+                      <div className="w-[3.54em] h-[3.54em] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[0.2em] border-[#082449]">
+                        <img
+                          src="/Images/geo.png"
+                          className="w-[2.08em] h-[2.52em] object-cover"
+                          alt="geo"
+                        />
                       </div>
-                      <h2 className="text-[24px] py-4 font-[700] text-[#082449]">
+                      <h2 className="text-[0.5em] py-4 font-[700] text-[#082449]">
                         Perkenalan Geografi
                       </h2>
-                      <div className="w-[305px] h-[82px] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
+                      <div className="w-[6.36em] h-[1.71em] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -561,10 +618,10 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.66em] font-[700] text-black">
                           30
                         </span>
-                        <div className="w-[9px] h-[58px] bg-[#ddd]"></div>
+                        <div className="w-[0.1875em] h-[1.21em] bg-[#ddd]"></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -577,7 +634,7 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.67em] font-[700] text-black">
                           25
                         </span>
                       </div>
@@ -585,15 +642,19 @@ const Dashboard = () => {
                   </div>
 
                   {/* ke - 2 */}
-                  <div className="bg-[#FFFFFF] mx-auto w-[370px] h-[370px] rounded-3xl mx-2">
+                  <div className="bg-[#FFFFFF] w-[7.7em] h-[7.7em] rounded-3xl mx-auto">
                     <div className="flex flex-col justify-center items-center p-8">
-                      <div className="w-[170px] h-[170px] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[10px] border-[#082449]">
-                        <img src="/Images/geo.png" className="object-contain" />
+                      <div className="w-[3.54em] h-[3.54em] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[0.2em] border-[#082449]">
+                        <img
+                          src="/Images/geo.png"
+                          className="w-[2.08em] h-[2.52em] object-cover"
+                          alt="geo"
+                        />
                       </div>
-                      <h2 className="text-[24px] py-4 font-[700] text-[#082449]">
+                      <h2 className="text-[0.5em] py-4 font-[700] text-[#082449]">
                         Perkenalan Geografi
                       </h2>
-                      <div className="w-[305px] h-[82px] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
+                      <div className="w-[6.36em] h-[1.71em] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -618,10 +679,10 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.66em] font-[700] text-black">
                           30
                         </span>
-                        <div className="w-[9px] h-[58px] bg-[#ddd]"></div>
+                        <div className="w-[0.1875em] h-[1.21em] bg-[#ddd]"></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -634,7 +695,7 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.67em] font-[700] text-black">
                           25
                         </span>
                       </div>
@@ -642,15 +703,19 @@ const Dashboard = () => {
                   </div>
 
                   {/* ke - 3 */}
-                  <div className="bg-[#FFFFFF] mx-auto w-[370px] h-[370px] rounded-3xl mx-2">
+                  <div className="bg-[#FFFFFF] w-[7.7em] h-[7.7em] rounded-3xl mx-auto">
                     <div className="flex flex-col justify-center items-center p-8">
-                      <div className="w-[170px] h-[170px] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[10px] border-[#082449]">
-                        <img src="/Images/geo.png" className="object-contain" />
+                      <div className="w-[3.54em] h-[3.54em] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[0.2em] border-[#082449]">
+                        <img
+                          src="/Images/geo.png"
+                          className="w-[2.08em] h-[2.52em] object-cover"
+                          alt="geo"
+                        />
                       </div>
-                      <h2 className="text-[24px] py-4 font-[700] text-[#082449]">
+                      <h2 className="text-[0.5em] py-4 font-[700] text-[#082449]">
                         Perkenalan Geografi
                       </h2>
-                      <div className="w-[305px] h-[82px] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
+                      <div className="w-[6.36em] h-[1.71em] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -675,10 +740,10 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.66em] font-[700] text-black">
                           30
                         </span>
-                        <div className="w-[9px] h-[58px] bg-[#ddd]"></div>
+                        <div className="w-[0.1875em] h-[1.21em] bg-[#ddd]"></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -691,7 +756,7 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.67em] font-[700] text-black">
                           25
                         </span>
                       </div>
@@ -700,15 +765,19 @@ const Dashboard = () => {
 
                   {/* ke - 4 */}
 
-                  <div className="bg-[#FFFFFF] mx-auto w-[370px] h-[370px] rounded-3xl mx-2">
+                  <div className="bg-[#FFFFFF] w-[7.7em] h-[7.7em] rounded-3xl mx-auto">
                     <div className="flex flex-col justify-center items-center p-8">
-                      <div className="w-[170px] h-[170px] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[10px] border-[#082449]">
-                        <img src="/Images/geo.png" className="object-contain" />
+                      <div className="w-[3.54em] h-[3.54em] flex justify-center items-center bg-[#E7D4BF] rounded-full box-border border-[0.2em] border-[#082449]">
+                        <img
+                          src="/Images/geo.png"
+                          className="w-[2.08em] h-[2.52em] object-cover"
+                          alt="geo"
+                        />
                       </div>
-                      <h2 className="text-[24px] py-4 font-[700] text-[#082449]">
+                      <h2 className="text-[0.5em] py-4 font-[700] text-[#082449]">
                         Perkenalan Geografi
                       </h2>
-                      <div className="w-[305px] h-[82px] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
+                      <div className="w-[6.36em] h-[1.71em] bg-[#E7D4BF] flex flex-row justify-between px-10 items-center rounded-xl">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -733,10 +802,10 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.66em] font-[700] text-black">
                           30
                         </span>
-                        <div className="w-[9px] h-[58px] bg-[#ddd]"></div>
+                        <div className="w-[0.1875em] h-[1.21em] bg-[#ddd]"></div>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="40"
@@ -749,10 +818,42 @@ const Dashboard = () => {
                             fill="#323232"
                           />
                         </svg>
-                        <span className="font-montserrat text-[32px] font-[700] text-black">
+                        <span className="font-montserrat text-[0.67em] font-[700] text-black">
                           25
                         </span>
                       </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="w-full py-10 bg-white sm:text-[16px] md:text-[24px] lg:text-[30px] xl:text-[48px]">
+              <div className="flex flex-col justify-center items-center">
+                <div className="grid grid-cols-1 w-3/4 justify-items-center items-center">
+                  <h1 className="font-montserrat font-[700] text-[1em] text-[#082449] text-center">
+                    Blog Hari Ini
+                  </h1>
+                  <div className="flex flex-col ">
+                    <h2 className="font-montserrat font-[500] text-[1em] text-[#082449] text-center">
+                      Siklus Milankovith dan Pengaruhnya pada Iklim
+                    </h2>
+                    <img src="Images/ilust_blog.png" alt="ilust_blog" />
+                    <div className="none">
+                      <p className="font-montserrat font-[400] text-[#082449] text-[0.5em]">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </p>
+                      <span className="w-[5em] bg-[#082449] box-border py-1 px-4 rounded-lg font-montserrat font-[600] text-white text-[0.4em] ">
+                        Lihat Lebih Lanjut
+                      </span>
                     </div>
                   </div>
                 </div>
