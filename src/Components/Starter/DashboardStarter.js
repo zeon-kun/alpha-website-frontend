@@ -9,13 +9,13 @@ const DashboardStarter = () => {
     <>
       <Body>
         <SearchStarter />
-        <div className="flex justify-center items-center text-[36px] w-1/2 my-8">
+        <div className="flex justify-center items-center text-[30px] xl:text-[36px] w-1/2 my-8">
           <span className="font-poppins text-colorMain font-[700] text-[1em] px-8">
             Ayo mulai belajar hal baru!
           </span>
         </div>
 
-        <div className="grid grid-cols-3 w-4/5 gap-6 justify-items-center content-center text-[36px]   mx-auto p-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-4/5 gap-6 justify-items-center content-center text-[20px] md:text-[25px] lg:text-[30px] xl:text-[36px]   mx-auto p-8">
           {/* card  */}
 
           <CardStarter
